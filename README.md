@@ -2,7 +2,7 @@
 
 ![](http://i.imgur.com/CXAc2.png)
 
-Banana Pancakes is a [Brunch.io](http://brunch.io) skeleton grounded in [Twitter Bootstrap](http://twitter.github.com/bootstrap/) with support for [SASS](http://sass-lang.com/), [LESS](http://lesscss.org/) and [Handlebars](http://handlebarsjs.com/). Also includes [Backbone.Mediator](https://github.com/chalbert/Backbone-Mediator) for Pub/Sub patterns.
+Banana Pancakes is a [Brunch](http://brunch.io/) skeleton that utilizes [Bootstrap](http://twitter.github.com/bootstrap/), [Backbone](http://backbonejs.org/), [Handlebars](http://handlebarsjs.com/), and [LESS](http://lesscss.org/) / [SASS](http://sass-lang.com/). Also includes [Backbone.Mediator](https://github.com/chalbert/Backbone-Mediator) for Pub/Sub patterns.
 
 ## Getting started
 
