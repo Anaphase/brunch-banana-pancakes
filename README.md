@@ -10,7 +10,7 @@ Make sure to have [Brunch.io](http://brunch.io) installed.
 
 Create your project using Eggs and Bacon with:
 
-	brunch new <your-project-name> -s github://anaphase/brunch-banana-pancakes
+	brunch new <your-project-name> -s github://Anaphase/brunch-banana-pancakes
 		
 Or simply copy the repository on your hard drive and rename it.
 
