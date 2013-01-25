@@ -25,9 +25,9 @@ exports.config =
                 before: [
                     
                     'vendor/scripts/console-helper.js',
-                    'vendor/scripts/jquery-1.8.3.js',
+                    'vendor/scripts/jquery-1.9.0.js',
                     'vendor/scripts/underscore-1.4.3.js',
-                    'vendor/scripts/backbone-0.9.2.js',
+                    'vendor/scripts/backbone-0.9.10.js',
                     'vendor/scripts/backbone-mediator.js',
                     
                     # These must come before the rest of the Bootstrap JS becasue of dependencies
