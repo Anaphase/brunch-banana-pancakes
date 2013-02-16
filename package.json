@@ -15,19 +15,16 @@
         "start": "brunch watch --server"
     },
     "dependencies": {
-        "javascript-brunch": ">= 1.0 < 1.4",
-        "less-brunch": ">= 1.0 < 1.4",
-        "sass-brunch": ">= 1.0 < 1.4",
-        
-        "css-brunch": ">= 1.0 < 1.4",
-        
-        "handlebars-brunch": ">= 1.0 < 1.4",
-        
-        "uglify-js-brunch": ">= 1.0 < 1.4",
-        "clean-css-brunch": ">= 1.0 < 1.4"
+        "clean-css-brunch": ">= 1.3.0",
+        "css-brunch": ">= 1.3.0",
+        "handlebars-brunch": ">= 1.3.0",
+        "javascript-brunch": ">= 1.3.0",
+        "less-brunch": ">= 1.5.0",
+        "sass-brunch": ">= 1.3.1",
+        "uglify-js-brunch": ">= 1.3.1"
     },
     "devDependencies": {
-        "mocha": "0.14.0",
-        "expect.js": "0.1.2"
+        "mocha": ">= 1.8.1",
+        "expect.js": ">0.2.0"
     }
 }

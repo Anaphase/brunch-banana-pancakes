@@ -34,7 +34,7 @@ var Suite = require('../suite')
 module.exports = function(suite){
   var suites = [suite];
 
-  suite.on('pre-require', function(context){
+  suite.on('pre-require', function(context, file, mocha){
 
     /**
      * Execute before each test case.
@@ -77,8 +77,18 @@ module.exports = function(suite){
     context.suite = function(title, fn){
       var suite = Suite.create(suites[0], title);
       suites.unshift(suite);
-      fn();
+      fn.call(suite);
       suites.shift();
+      return suite;
+    };
+
+    /**
+     * Exclusive test-case.
+     */
+
+    context.suite.only = function(title, fn){
+      var suite = context.suite(title, fn);
+      mocha.grep(suite.fullTitle());
     };
 
     /**
@@ -88,7 +98,26 @@ module.exports = function(suite){
      */
 
     context.test = function(title, fn){
-      suites[0].addTest(new Test(title, fn));
+      var test = new Test(title, fn);
+      suites[0].addTest(test);
+      return test;
+    };
+
+    /**
+     * Exclusive test-case.
+     */
+
+    context.test.only = function(title, fn){
+      var test = context.test(title, fn);
+      mocha.grep(test.fullTitle());
+    };
+
+    /**
+     * Pending test case.
+     */
+
+    context.test.skip = function(title){
+      context.test(title);
     };
   });
 };
