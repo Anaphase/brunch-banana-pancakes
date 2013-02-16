@@ -6,11 +6,33 @@ header {
 	
 	h1 {
 		text-indent: -9999px;
-		background-image: url('http://i.imgur.com/t5AI4.png');
+		background: url('http://i.imgur.com/t5AI4.png') no-repeat center;
 		width: 500px;
 		height: 94px;
 		margin: 0;
 		padding: 0;
+	}
+	
+}
+
+@media (max-width: 767px) {
+	
+	// make the header span the entire page width even on small screens
+	header {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+}
+
+@media (max-width: 540px) {
+	
+	// when the page is too narrow for the 500px logo, switch to a smaller, 300px version (also center it)
+	header h1 {
+		background: url('http://i.imgur.com/8LfcwUs.png') no-repeat center;
+		width: 100%;
 	}
 	
 }
