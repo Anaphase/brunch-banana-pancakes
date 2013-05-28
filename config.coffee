@@ -1,13 +1,13 @@
 exports.config =
     
     # Edit the next line to change default build path.
-    # paths:
-    #     public: 'public'
+    paths:
+        public: 'public'
     
     files:
         javascripts:
             # Defines what file will be generated with `brunch generate`.
-            # defaultExtension: 'js'
+            defaultExtension: 'js'
             
             # Describes how files will be compiled & joined together.
             # Available formats:
