@@ -1,13 +1,13 @@
 exports.config =
     
     # Edit the next line to change default build path.
-    paths:
-        public: 'public'
+    # paths:
+    #     public: 'public'
     
     files:
         javascripts:
             # Defines what file will be generated with `brunch generate`.
-            defaultExtension: 'js'
+            # defaultExtension: 'js'
             
             # Describes how files will be compiled & joined together.
             # Available formats:
@@ -17,6 +17,8 @@ exports.config =
             joinTo:
                 'javascripts/app.js': /^app/
                 'javascripts/vendor.js': /^vendor/
+                'test/javascripts/test.js': /^test[\\/](?!vendor)/
+                'test/javascripts/test-vendor.js': /^test[\\/](?=vendor)/
             
             # Defines compilation order.
             # `vendor` files will be compiled before other ones
@@ -47,10 +49,15 @@ exports.config =
                     'vendor/scripts/bootstrap/bootstrap-typeahed.js',
                     
                 ]
-                
+                after: [
+                  'test/vendor/scripts/test-helper.js'
+                ]
+               
         stylesheets:
             defaultExtension: 'less'
-            joinTo: 'stylesheets/app.css'
+            joinTo: 
+              'stylesheets/app.css': /^(app|vendor)/
+              'test/stylesheets/test.css': /^test/
             order:
                 before: ['vendor/styles/bootstrap/bootstrap.less']
             
