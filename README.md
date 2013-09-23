@@ -10,7 +10,7 @@ Make sure to have [Brunch.io](http://brunch.io) installed.
 
 Create your project using Banana Pancakes with:
 
-	brunch new <your-project-name> -s github://Anaphase/brunch-banana-pancakes
+	brunch new github://Anaphase/brunch-banana-pancakes <your-project-name>
 		
 Or simply copy the repository to your hard drive and rename it.
 
