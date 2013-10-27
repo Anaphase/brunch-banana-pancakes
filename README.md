@@ -22,7 +22,7 @@ Or simply copy the repository to your hard drive and rename it.
 * Learn:
     * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
     * Place static files you want to be copied from `app/assets/` to `public/`.
-    * [Brunch site](http://brunch.io), [Chaplin site](http://chaplinjs.org)
+    * [Brunch site](http://brunch.io), [Backbone site](http://backbonejs.org/)
 
 ## Customize Bootstrap Stylesheets
 
