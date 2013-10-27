@@ -1,0 +1,27 @@
+{
+  "name": "package-name",
+  "version": "0.0.1",
+  "main": "public/javascripts/app.js",
+  "dependencies": {
+    "console-polyfill": "~0.1.0",
+    "lodash": "~2.2.1",
+    "jquery": "~1.10.2",
+    "backbone": "~1.1.0",
+    "Backbone-Mediator": "*"
+  },
+  "overrides": {
+    "backbone": {
+      "dependencies": {
+        "lodash": "*",
+        "jquery": "*"
+      },
+      "main": "backbone.js"
+    },
+    "Backbone-Mediator": {
+      "dependencies": {
+        "backbone": "*"
+      },
+      "main": "backbone-mediator.js"
+    }
+  }
+}
