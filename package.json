@@ -1,29 +1,30 @@
 {
-    "author": "Your Name",
-    "name": "package-name",
-    "description": "Package description",
-    "version": "0.0.1",
-    "homepage": "",
-    "repository": {
-        "type": "git",
-        "url": ""
-    },
-    "engines": {
-        "node": "~0.8.0"
-    },
-    "scripts": {
-        "start": "brunch watch --server"
-    },
-    "dependencies": {
-        "clean-css-brunch": ">= 1.5.1",
-        "css-brunch": ">= 1.5.1",
-        "handlebars-brunch": ">= 1.5.2",
-        "javascript-brunch": ">= 1.5.1",
-        "less-brunch": ">= 1.5.1",
-        "sass-brunch": ">= 1.5.1",
-        "uglify-js-brunch": ">= 1.5.1"
-    },
-    "devDependencies": {
-        "expect.js": ">= 0.2.0"
-    }
+  "author": "Your Name",
+  "name": "package-name",
+  "description": "Package description",
+  "version": "0.0.1",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.8.0"
+  },
+  "scripts": {
+    "start": "brunch watch --server"
+  },
+  "dependencies": {
+    "clean-css-brunch": "~1.7.1",
+    "css-brunch": "~1.7.0",
+    "handlebars-brunch": "~1.7.2",
+    "javascript-brunch": "~1.7.0",
+    "less-brunch": "~1.7.0",
+    "sass-brunch": "~1.7.0",
+    "uglify-js-brunch": "~1.7.3",
+    "read-components": "~0.5.1"
+  },
+  "devDependencies": {
+    "expect.js": "~0.2.0"
+  }
 }
