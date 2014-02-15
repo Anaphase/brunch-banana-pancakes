@@ -9,22 +9,22 @@
     "url": ""
   },
   "engines": {
-    "node": "~0.8.0"
+    "node": "latest"
   },
   "scripts": {
     "start": "brunch watch --server"
   },
   "dependencies": {
-    "clean-css-brunch": "~1.7.1",
-    "css-brunch": "~1.7.0",
-    "handlebars-brunch": "~1.7.2",
-    "javascript-brunch": "~1.7.0",
-    "less-brunch": "~1.7.0",
-    "sass-brunch": "~1.7.0",
-    "uglify-js-brunch": "~1.7.3",
-    "read-components": "~0.5.1"
+    "clean-css-brunch": "latest",
+    "css-brunch": "latest",
+    "handlebars-brunch": "latest",
+    "javascript-brunch": "latest",
+    "less-brunch": "latest",
+    "sass-brunch": "latest",
+    "uglify-js-brunch": "latest",
+    "read-components": "latest"
   },
   "devDependencies": {
-    "expect.js": "~0.2.0"
+    "expect.js": "latest"
   }
 }

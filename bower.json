@@ -3,23 +3,29 @@
   "version": "0.0.1",
   "main": "public/javascripts/app.js",
   "dependencies": {
-    "console-polyfill": "~0.1.0",
-    "lodash": "~2.2.1",
-    "jquery": "~2.0.3",
-    "backbone": "~1.1.0",
-    "Backbone-Mediator": "*"
+    "console-polyfill": "latest",
+    "lodash": "latest",
+    "jquery": "latest",
+    "backbone": "latest",
+    "Backbone-Mediator": "latest"
   },
   "overrides": {
+    "jquery": {
+      "dependencies": {
+        "sizzle": "latest"
+      },
+      "main": "dist/jquery.js"
+    },
     "backbone": {
       "dependencies": {
-        "lodash": "*",
-        "jquery": "*"
+        "lodash": "latest",
+        "jquery": "latest"
       },
       "main": "backbone.js"
     },
     "Backbone-Mediator": {
       "dependencies": {
-        "backbone": "*"
+        "backbone": "latest"
       },
       "main": "backbone-mediator.js"
     }
