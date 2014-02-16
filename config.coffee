@@ -16,8 +16,12 @@ exports.config =
       order:
         after: [
           # popover requires tooltip
-          'vendor/scripts/bootstrap/bootstrap-tooltip.js'
-          'vendor/scripts/bootstrap/bootstrap-popover.js'
+          'vendor/scripts/bootstrap/tooltip.js'
+          'vendor/scripts/bootstrap/popover.js'
+          
+          # collapse requires transitions
+          'vendor/scripts/bootstrap/collapse.js'
+          'vendor/scripts/bootstrap/transition.js'
           
           'test/vendor/scripts/test-helper.js'
         ]
