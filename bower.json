@@ -11,9 +11,6 @@
   },
   "overrides": {
     "jquery": {
-      "dependencies": {
-        "sizzle": "latest"
-      },
       "main": "dist/jquery.js"
     },
     "backbone": {
